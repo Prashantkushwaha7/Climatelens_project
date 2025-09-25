@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Stories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Climate Stories</div>
+        <div class="nav-links">
+            <button id="createStoryBtn" class="create-story-btn">🌍 Create Story</button>
+            <a href="#map">Map</a>
+            <a href="#login">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Learn Climate Through Stories</h1>
+            <p>AI-generated climate stories for your location</p>
+        </section>
+    </main>
+
+    <!-- Story Modal -->
+    <div id="storyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="loadingSpinner" class="loading">Creating your story...</div>
+            <div id="storyContent" class="story-content" style="display:none;">
+                <h2>Your Climate Story</h2>
+                <p id="storyText"></p>
+                <div class="story-controls">
+                    <button id="playBtn">🔊 Play</button>
+                    <button id="pauseBtn" style="display:none;">⏸️ Pause</button>
+                    <select id="languageSelect">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="ne">Nepali</option>
+                    </select>
+                    <button id="saveBtn">💾 Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

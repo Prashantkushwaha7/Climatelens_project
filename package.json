@@ -1,0 +1,19 @@
+{
+  "name": "climatelens",
+  "version": "1.0.0",
+  "description": "Voices from the Frontlines - Climate Impact Stories Platform",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["climate", "storytelling", "mapping", "react", "nodejs"],
+  "authors": ["Jagarnath Mali", "Prashant Chandra Kushwaha"],
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
